@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Unity Path Consulting LLC</title>
+  <style>
+    :root {
+      --primary: #0b2540;
+      --secondary: #163a5f;
+      --accent: #c9a14a;
+      --light: #f5f7fa;
+      --dark: #1f2933;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: "Inter", "Segoe UI", Arial, sans-serif;
+      color: var(--dark);
+      background-color: #ffffff;
+      line-height: 1.7;
+    }
+
+    /* NAVBAR */
+    .navbar {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: #ffffff;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.06);
+    }
+
+    .nav-container {
+      max-width: 1200px;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 18px 20px;
+    }
+
+    .brand {
+      font-weight: 600;
+      color: var(--primary);
+      font-size: 1.1rem;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 28px;
+      margin: 0;
+      padding: 0;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: var(--dark);
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+
+    .nav-links a:hover {
+      color: var(--primary);
+    }
+
+    /* HERO */
+    header {
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      color: #ffffff;
+      padding: 100px 20px 120px;
+      text-align: center;
+    }
+
+    header img {
+      max-width: 150px;
+      margin-bottom: 25px;
+    }
+
+    header h1 {
+      font-size: 2.8rem;
+      margin: 0 0 20px;
+      font-weight: 600;
+    }
+
+    header p {
+      max-width: 900px;
+      margin: auto;
+      font-size: 1.15rem;
+      opacity: 0.95;
+    }
+
+    /* SECTIONS */
+    section {
+      padding: 90px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    section h2 {
+      font-size: 2.2rem;
+      color: var(--primary);
+      margin-bottom: 25px;
+    }
+
+    section h2::after {
+      content: "";
+      width: 60px;
+      height: 3px;
+      background: var(--accent);
+      display: block;
+      margin-top: 10px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 35px;
+    }
+
+    .card {
+      background: #ffffff;
+      padding: 35px;
+      border-radius: 14px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    }
+
+    .card h3 {
+      margin-top: 0;
+      color: var(--secondary);
+      font-size: 1.4rem;
+    }
+
+    /* VALUES */
+    .values ul {
+      list-style: none;
+      padding: 0;
+      max-width: 800px;
+    }
+
+    .values li {
+      padding: 12px 0 12px 28px;
+      position: relative;
+      font-size: 1.05rem;
+    }
+
+    .values li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: var(--accent);
+      font-weight: bold;
+    }
+
+    /* TABLE */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 30px;
+      font-size: 0.95rem;
+    }
+
+    table th, table td {
+      padding: 14px;
+      border-bottom: 1px solid #e5e7eb;
+      text-align: right;
+    }
+
+    table th {
+      text-align: left;
+      color: var(--primary);
+    }
+
+    table tr:last-child {
+      font-weight: 600;
+    }
+
+    /* CONTACT */
+    .contact-box {
+      background: var(--light);
+      padding: 50px;
+      border-radius: 18px;
+      text-align: center;
+    }
+
+    footer {
+      background: var(--primary);
+      color: #ffffff;
+      padding: 50px 20px;
+      text-align: center;
+      font-size: 0.95rem;
+    }
+
+    @media (max-width: 768px) {
+      header h1 { font-size: 2.2rem; }
+      .nav-links { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="nav-container">
+    <span class="brand">Unity Path Consulting</span>
+    <ul class="nav-links">
+      <li><a href="#mission">Mission & Vision</a></li>
+      <li><a href="#services">Services</a></li>
+      
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header>
+  <img src="logoUnitypath.png" alt="Unity Path Consulting Logo" />
+  <h1>Unity Path Consulting LLC</h1>
+  <p>Empowering individuals, professional athletes, and organizations in the United States through financial education, innovative planning, and personalized investment strategies.</p>
+</header>
+
+<section id="mission">
+  <h2>Mission & Vision</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Mission</h3>
+      <p>
+        To empower individuals and organizations in the United States through financial education, innovative planning, and personalized investment strategies, with a specialized focus on professional athletes and underserved communities, fostering long-term financial stability and growth.
+      </p>
+    </div>
+    <div class="card">
+      <h3>Vision</h3>
+      <p>
+        To become a leading financial consulting and education platform in the United States, recognized for transforming how individuals and professional athletes understand, manage, and grow their wealth—building a culture of financial literacy that strengthens both personal prosperity and the national economy.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section id="services">
+  <h2>Core Services</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Financial Education Center</h3>
+      <p>
+        Our flagship initiative dedicated to advancing financial literacy nationwide through workshops, seminars, online courses, and community partnerships. Programs cover budgeting, investments, retirement planning, and tax-efficient strategies, with bilingual delivery in English, Portuguese, and Spanish.
+      </p>
+    </div>
+    <div class="card">
+      <h3>Financial Planning for Professional Athletes</h3>
+      <p>
+        Specialized financial planning for athletes across professional leagues, collegiate programs, and international transfers. Services focus on wealth preservation, risk management, tax compliance, and career transition planning.
+      </p>
+    </div>
+    <div class="card">
+      <h3>Investment Education & Market Training</h3>
+      <p>
+        Educational programs designed to teach responsible investing, risk assessment, and long-term wealth-building strategies using both digital platforms and in-person instruction.
+      </p>
+    </div>
+    <div class="card">
+      <h3>Customized Investment Solutions</h3>
+      <p>
+        Tailored investment strategies aligned with each client’s objectives and risk tolerance, emphasizing diversified and responsible asset allocation with continuous monitoring.
+      </p>
+    </div>
+    <div class="card">
+      <h3>Corporate Advisory & Internal Controls</h3>
+      <p>
+        Advisory services for corporations focused on internal controls, governance, compliance frameworks, and strategic financial decision-making to enhance resilience and efficiency.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section id="innovation">
+  <h2>Unique Business Model</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Financial Education as a Public Good</h3>
+      <p>
+        Education is a core mission of Unity Path Consulting. By addressing financial illiteracy, the firm contributes to reducing household debt, improving retirement readiness, and empowering underserved communities—issues of national importance in the United States.
+      </p>
+    </div>
+    <div class="card">
+      <h3>Athlete-Centric Financial Planning</h3>
+      <p>
+        A dedicated practice focused on professional athletes, addressing the systemic challenges of short career spans, income volatility, and post-retirement financial distress through structured, compliant, and long-term planning strategies.
+      </p>
+    </div>
+  </div>
+</section>
+
+
+
+<section id="contact">
+  <h2>Contact</h2>
+  <div class="contact-box">
+    <p>
+      Email: contact@unitypathconsulting.com<br />
+      Location: United States
+    </p>
+  </div>
+</section>
+
+<footer>
+  <p>&copy; 2026 Unity Path Consulting LLC. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
